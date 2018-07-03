@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
+    "moment": "^2.22.2",
     "pouchdb": "^7.0.0",
     "react-bootstrap": "^0.32.1",
     "react-pouchdb": "^0.2.0"

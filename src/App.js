@@ -16,7 +16,9 @@ const App = () => (
               message: { $gte: null }
             }}
             render={({ docs }) =>
-              docs.map(doc => <Message key={doc._id} {...doc} />)
+              docs
+                .sort((a, b) => b.timestamp - a.timestamp)
+                .map(doc => <Message key={doc._id} {...doc} />)
             }
           />
         </Col>

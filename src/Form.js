@@ -12,7 +12,7 @@ class App extends Component {
         'Content-Type': 'application/json'
       },
       method: 'POST',
-      body: JSON.stringify({ message })
+      body: JSON.stringify({ message, timestamp: Date.now() })
     });
     this.setState({ message: '' });
   };
