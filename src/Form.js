@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Button, ControlLabel, FormControl, FormGroup } from 'react-bootstrap';
 import { dbAddress } from './db';
 
-class App extends Component {
+class Form extends Component {
   state = { message: '' };
   onSubmit = async event => {
     event.preventDefault();
@@ -36,4 +36,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Form;
